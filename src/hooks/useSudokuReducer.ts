@@ -337,6 +337,11 @@ function sudokuReducer(state: SudokuState, action: SudokuAction): SudokuState {
       };
     }
 
+    // 게임 초기화 - 난이도 선택 모달로 돌아감
+    case 'RESET_GAME': {
+      return getInitialState();
+    }
+    
     default:
       return state;
   }

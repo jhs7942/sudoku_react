@@ -55,4 +55,5 @@ export type SudokuAction =
   | { type: 'USE_HINT' }
   | { type: 'TICK_TIMER' }
   | { type: 'PAUSE_GAME' }
-  | { type: 'WIN_GAME' };
+  | { type: 'WIN_GAME' }
+  | { type: 'RESET_GAME' };

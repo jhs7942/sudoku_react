@@ -172,10 +172,7 @@ export function SudokuGamePage() {
               // 새 게임 버튼 클릭 시 게임 상태를 idle로 변경
               // AskDifficultyModal이 다시 표시됨
               // 간단하게 처리하기 위해 새로운 게임을 바로 시작
-              dispatch({
-                type: 'START_GAME',
-                payload: { difficulty: state.difficulty },
-              });
+              dispatch({ type: 'RESET_GAME' });
             }}
           />
 
